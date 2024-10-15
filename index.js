@@ -12,5 +12,10 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
         return employee;
       
 }
-function deleteFromEmployeeByKey(employee, key){}
+function deleteFromEmployeeByKey(employee, key){
+        let newEmployee = { ...employee };
+        delete newEmployee[key];
+        return newEmployee;
+      
+}
 function destructivelyDeleteFromEmployeeByKey(employee, key){}
