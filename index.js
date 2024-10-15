@@ -18,4 +18,8 @@ function deleteFromEmployeeByKey(employee, key){
         return newEmployee;
       
 }
-function destructivelyDeleteFromEmployeeByKey(employee, key){}
+function destructivelyDeleteFromEmployeeByKey(employee, key){
+        delete employee[key];
+        return employee;
+      
+}
